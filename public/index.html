@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">  
+    <form id="contact" action="/sendemail" method="post">
+      <h3>Contact Form</h3>
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" name="name" required autofocus >
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" tabindex="2" name="email" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" name="phonenumber" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here...." tabindex="5" name="message" required></textarea>
+      </fieldset>
+      <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
